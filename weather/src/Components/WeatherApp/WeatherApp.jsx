@@ -10,9 +10,8 @@ import rain_icon from '../Assets/rain.png';
 import snow_icon from '../Assets/snow.png';
 import wind_icon from '../Assets/wind.png';
 
-
-const weatherAPI = 'af33ee8a1654cbcc0faa6d4077b1a2d6',
-	googleAPI = 'AIzaSyDwZvu7RYs1uDtpAY-ldcVoW5fI69zHNqk';
+const weatherAPI = '',
+	googleAPI = '';
 
 const WeatherApp = () => {
 	const [humidity, setHumidity] = useState(0),
