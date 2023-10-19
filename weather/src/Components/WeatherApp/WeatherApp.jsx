@@ -27,7 +27,7 @@ const WeatherApp = () => {
 		let response = await fetch(getCurrent);
 		response.json().then(data => {
 			setLocation(data.name);
-			setTemperature(data.main.temp);
+			setTemperature(Math.ceil(data.main.temp));
 			setHumidity(data.main.humidity);
 			setWind(data.wind.speed);
 			setWeatherImage(() => {
@@ -40,6 +40,9 @@ const WeatherApp = () => {
 						break;
 					case 'Snow':
 						return snow_icon;
+						break;
+					case 'Clear':
+						return clear_icon;
 						break;
 				}
 			});
